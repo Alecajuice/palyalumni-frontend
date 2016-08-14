@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+	    <style>
+		    body {
+		    margin: 0;
+		    font-family: 'Gill Sans'
+	    }
+
+	    div.left {
+		    margin-left: 15px;
+		    margin-right: 15px; 
+		    display: inline-block;
+		    float: left;
+		    width: calc(50% - 31px);
+		    height: 100%;
+	    }
+
+	    div.right {
+		    margin-left: 15px;
+		    margin-right: 15px; 
+		    display: inline-block;
+		    float: right;
+		    width: calc(50% - 31px);
+		    height: 100%;
+	    }
+
+	    div.header-text{
+		    font-size: 40px;
+		    text-align: center;
+	    }
+
+	    div.top {
+		    min-height: 300px;
+		    margin-left: 15px;
+		    margin-right: 15px;
+	    }
+
+	    div.bottom {
+		    min-height: 300px;
+		    margin-left: 15px;
+		    margin-right: 15px;
+	    }
+
+	    hr {
+		    margin-top: 10px;
+		    margin-bottom: 10px;
+		    height: 4px;
+		    background-color: black;
+		    border-color: black;
+		    margin-left: 15px;
+		    margin-right: 15px; 
+	    } 
+	    </style>
+	    <title></title>
+	</head>
+<body>
+    <div class="left">
+        <div class="top">
+            <div class="header-text">
+                Blog Post
+            </div>{{ cms:page:blog_post:rich_text }}
+        </div>
+        <hr>
+        <div class="bottom">
+            <div class="header-text">
+                Another Update
+            </div>{{ cms:page:update:rich_text }}
+        </div>
+    </div>
+    <div class="right">
+        <div class="top">
+            <div class="header-text">
+                An Announcement
+            </div>{{ cms:page:announcement:rich_text }}
+        </div>
+        <hr>
+        <div class="bottom">
+            <div class="header-text">
+                An Announcement
+            </div>{{ cms:page:anoterh_announcement:rich_text }}
+        </div>
+    </div>
+</body>
+</html>
