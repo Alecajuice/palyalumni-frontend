@@ -1,0 +1,51 @@
+body {
+	margin: 0;
+	font-family: 'Gill Sans'
+}
+
+div.left {
+	margin-left: 15px;
+	margin-right: 15px;	
+	display: inline-block;
+	float: left;
+	width: calc(50% - 31px);
+	height: 100%;
+	background-color: white;
+}
+
+div.right {
+	margin-left: 15px;
+	margin-right: 15px;	
+	display: inline-block;
+	float: left;
+	width: calc(50% - 31px);
+	height: 100%;
+	background-color: white;
+}
+
+div.header-text{
+	font-size: 40px;
+	text-align: center;
+}
+
+div.top {
+	min-height: 300px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+div.bottom {
+	min-height: 300px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+hr {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	height: 4px;
+	background-color: black;
+	border-color: black;
+	margin-left: 15px;
+	margin-right: 15px;	
+}
